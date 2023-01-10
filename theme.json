@@ -1,0 +1,66 @@
+{
+    "version": 2,
+    "customTemplates": [
+        {
+            "name": "blank",
+            "postTypes": [
+                "page",
+                "post"
+            ],
+            "title": "Blank"
+        },
+        {
+            "name": "404",
+            "postTypes": [
+                "page"
+            ],
+            "title": "404"
+        }
+    ],
+    "settings": {
+        "layout": {
+            "contentSize": "840px",
+            "wideSize": "1100px"
+        }
+    },
+    "styles": {
+        "blocks": {
+            "core/post-title": {
+				"spacing": {
+					"margin": {
+						"bottom": "1.25rem",
+						"top": "1.25rem"
+					}
+				},
+				"typography": {
+					"fontWeight": "400"
+				},
+				"elements": {
+					"link": {
+						":hover": {
+							"typography": {
+								"textDecoration": "underline"
+							}
+						},
+						":focus": {
+							"typography": {
+								"textDecoration": "underline dashed"
+							}
+						},
+						":active": {
+							"color": {
+								"text": "var(--wp--preset--color--secondary)"
+							},
+							"typography": {
+								"textDecoration": "none"
+							}
+						},
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				}
+			}
+        }
+    }
+}
